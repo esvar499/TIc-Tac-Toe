@@ -8,29 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tic Tac Toe</h1>
-    </header>
-    <section class="turn-container" aria-live="polite">
-        <h3>Current Turn:</h3>
-        <div class="turn-box" role="status" aria-label="Current player: X">X</div>
-        <div class="turn-box" role="status" aria-label="Current player: O">O</div>
-    </section>
-    <main class="main-grid" role="grid" aria-label="Game board">
-        <div class="box" tabindex="0" aria-label="Cell 0">0</div>
-        <div class="box" tabindex="0" aria-label="Cell 1">1</div>
-        <div class="box" tabindex="0" aria-label="Cell 2">2</div>
-        <div class="box" tabindex="0" aria-label="Cell 3">3</div>
-        <div class="box" tabindex="0" aria-label="Cell 4">4</div>
-        <div class="box" tabindex="0" aria-label="Cell 5">5</div>
-        <div class="box" tabindex="0" aria-label="Cell 6">6</div>
-        <div class="box" tabindex="0" aria-label="Cell 7">7</div>
-        <div class="box" tabindex="0" aria-label="Cell 8">8</div>
-    </main>
-    <section>
-        <h2 id="results" aria-live="assertive"></h2>
-        <button id="play-again" aria-label="Play again">Play Again</button>
-    </section>
+    <div class="turn-container">
+        <h3>Turn For</h3>
+        <div class="turn-box align" id="player-X">X</div>
+        <div class="turn-box align" id="player-O">O</div>
+        <div class="bg"></div>
+    </div>
+
+    <!-- Display turn count and timer -->
+    <div class="info-container">
+        <p id="turn-count">Turn: 1</p>
+        <p id="turn-timer">Time left: 10s</p>
+    </div>
+
+    <div class="main-grid">
+        <div class="box align">0</div>
+        <div class="box align">1</div>
+        <div class="box align">2</div>
+        <div class="box align">3</div>
+        <div class="box align">4</div>
+        <div class="box align">5</div>
+        <div class="box align">6</div>
+        <div class="box align">7</div>
+        <div class="box align">8</div>
+    </div>
+
+    <h2 id="results"></h2>
+    <button id="play-again">Play Again</button>
+
     <script src="script.js"></script>
 </body>
 </html>
