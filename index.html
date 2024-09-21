@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <section class="turn-container" aria-live="polite">
+        <h3>Current Turn:</h3>
+        <div class="turn-box" role="status" aria-label="Current player: X">X</div>
+        <div class="turn-box" role="status" aria-label="Current player: O">O</div>
+    </section>
+    <main class="main-grid" role="grid" aria-label="Game board">
+        <div class="box" tabindex="0" aria-label="Cell 0">0</div>
+        <div class="box" tabindex="0" aria-label="Cell 1">1</div>
+        <div class="box" tabindex="0" aria-label="Cell 2">2</div>
+        <div class="box" tabindex="0" aria-label="Cell 3">3</div>
+        <div class="box" tabindex="0" aria-label="Cell 4">4</div>
+        <div class="box" tabindex="0" aria-label="Cell 5">5</div>
+        <div class="box" tabindex="0" aria-label="Cell 6">6</div>
+        <div class="box" tabindex="0" aria-label="Cell 7">7</div>
+        <div class="box" tabindex="0" aria-label="Cell 8">8</div>
+    </main>
+    <section>
+        <h2 id="results" aria-live="assertive"></h2>
+        <button id="play-again" aria-label="Play again">Play Again</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
